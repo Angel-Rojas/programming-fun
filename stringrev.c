@@ -10,7 +10,7 @@ purpose: reverse a string front to back using c
 int main(int argc,char* argv[]){
  int j = 4;
  char str[5] = {'A','N','G','E','L'};
- char temp[5] = {};
+ char temp[5] = {}; // Huge memory-address issue fixed. DON'T FORGET about initializing!
  
  printf(" Before: \n");
  printf("String:");
@@ -31,7 +31,7 @@ int main(int argc,char* argv[]){
  printf("\n After: \n");
  for(int i=0; i < 5; i++) {
   printf(" str %c", str[i]);  // d is integer, f is float, c is character
-  printf(" temp %c\n", temp[i]);  // d is integer, f is float, c is character
+  printf(" temp %c\n", temp[i]);  
  }
 
 }
