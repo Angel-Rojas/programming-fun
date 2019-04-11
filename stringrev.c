@@ -4,8 +4,8 @@ date: 4/10/2019
 purpose: reverse a string front to back using c
 
 */
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h> // input/output
+#include <stdlib.h> // main library in c
 
 int main(int argc,char* argv[]){
  int j = 4;
@@ -18,7 +18,7 @@ int main(int argc,char* argv[]){
   printf(" %c ", str[i]);
  }
  printf("\n");
- for(int i=0; i != j; i++) {
+ for(int i=0; i != j; i++) { // Don't let head == tail
   temp[i] = str[i];
   printf(" TEMP %c ", temp[i]);
   str[i] = str[j];
